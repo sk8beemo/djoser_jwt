@@ -133,6 +133,16 @@ DJOSER = {
     'SERIALIZERS': {},
 }
 
+# smtp
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_HOST_USER = 'mail'
+EMAIL_HOST_PASSWORD = 'password'
+EMAIL_PORT = 587
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=14),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=28),
